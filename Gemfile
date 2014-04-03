@@ -7,7 +7,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.9.0'
 end
 
 group :assets do
@@ -51,7 +51,9 @@ end
 # gem 'debugger', group: [:development, :test]
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '1.1.2'
 end
 
-gem 'pg', group: :production
+group :production do
+  gem 'pg', '0.12.2'
+end 
